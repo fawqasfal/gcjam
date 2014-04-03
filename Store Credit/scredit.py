@@ -1,27 +1,9 @@
-"""
-You receive a credit C at a local store and would like to buy two items. You first walk 
-through the store and create a list L of all available items. From this list you would like to 
-buy two items that add up to the entire value of the credit. The solution you provide will 
-consist of the two integers indicating the positions of the items in your list (smaller number first).
-"""
-
-"""
-The first line of input gives the number of cases, N. N test cases follow. For each test case there will be:
-One line containing the value C, the amount of credit you have at the store.
-One line containing the value I, the number of items in the store.
-One line containing a space separated list of I integers. Each integer P indicates the price of an item in the store.
-Each test case will have exactly one solution.
-"""
-
 with open("A-large-practice.in",'r') as inp: 
 	n = int(inp.next())
 	#data is a 3d array : each case is a subarray like [C, I, [P1, P2, P3 ... PI]] for the Nth test case, where data[N] is the N-1th subarray
 	data = [[int(inp.next()), int(inp.next())] + [inp.next().split()] for x in xrange(n) ]#crazy ass list comprehensions bro
 
-"""
-For each test case, output one line containing "Case #x: " 
-followed by the indices of the two items whose price adds up to the store credit. The lower index should be output first.
-"""
+#figuring out output :
 answer = ''
 cnum = 0 #tracks which case you are at
 #basic brute force O(n^2) algo : test each combo of pairs until you find an answer
