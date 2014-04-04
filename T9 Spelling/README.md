@@ -7,7 +7,9 @@ The Latin alphabet contains 26 characters and telephones only have ten digits on
 INPUT
 =====
 The first line of input gives the number of cases, N. N test cases follow. Each case is a line of text formatted as
-	desired_message
+    
+    desired_message
+
 Each message will consist of only lowercase characters a-z and space characters ' '. Pressing zero emits a space.
 
 OUTPUT
