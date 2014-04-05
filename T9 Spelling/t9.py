@@ -15,8 +15,8 @@ alpharr[8] = ['t','u','v']
 alpharr[9] = ['w','x','y','z']
 alpharr.pop(10)
 
-with open('C-small-practice.in', 'r') as inp:
-	inplets = [inp.next().strip() for case in xrange(int(inp.next()))]
+with open('C-large-practice.in', 'r') as inp:
+	inplets = [inp.next().strip('\n') for case in xrange(int(inp.next()))]
 
 def toT9(case):
 	#solve any one case in just one line:
@@ -32,6 +32,5 @@ def toT9(case):
 
 rightans = [toT9(case) for case in inplets]
 rightans = '\n'.join(["Case #%d: "%(x + 1) + rightans[x] for x in xrange(len(rightans))])
-
-with open('C-small-practice.out', 'w') as outp:
+with open('C-large-practice.out', 'w') as outp:
 	outp.write(rightans)
