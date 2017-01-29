@@ -26,15 +26,17 @@ T = 1000
 Large dataset
 
 T = 10
+
 100 ≤ n ≤ 800
+
 -100000 ≤ xi, yi ≤ 100000
 
 Sample
 
 
-Input 				Output 
-2					Case #1: -25					
-3					Case #2: 6
+Input 				|Output 
+2					|Case #1: -25					
+3					|Case #2: 6
 1 3 -5
 -2 4 1
 5
